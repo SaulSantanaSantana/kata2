@@ -14,16 +14,11 @@ public class Kata2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                
-        final int data[] = {1,2,3,4,5,6,7,8,9,1,2,3,4,5,6};
-        HashMap<Integer, Integer> histogram = new HashMap();
-        
-        for (int key : data) {
-            histogram.put(key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
-        }
-        
-        for (int i : histogram.keySet()) {
-            System.out.println(i + "==>" + histogram.get(i));
+        Histogram histo = new Histogram();
+        Map<Integer,Integer> histogr = histo.getHistogram();
+
+        for (int i : histogr.keySet()) {
+            System.out.println(i + "==>" + histogr.get(i));
         }
         
     }
