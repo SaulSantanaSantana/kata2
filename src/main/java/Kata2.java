@@ -14,7 +14,9 @@ public class Kata2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Histogram histo = new Histogram();
+        Integer[] data = {1,100,4,2,4,1,3,5,9,100,100};
+        
+        Histogram histo = new Histogram(data);
         Map<Integer,Integer> histogr = histo.getHistogram();
 
         for (int i : histogr.keySet()) {
