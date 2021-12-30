@@ -1,5 +1,4 @@
 
-import java.util.HashMap;
 import java.util.Map;
 
 
@@ -20,7 +19,7 @@ public class Kata2 {
         Map<String,Integer> histogr = histo.getHistogram();
 
         for (String i : histogr.keySet()) {
-            System.out.println(i + "==>" + histogr.get(i));
+            System.out.println(i + " ==> " + histogr.get(i));
         }
         
     }
